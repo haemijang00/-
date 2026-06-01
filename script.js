@@ -193,6 +193,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Sub-projects list click modal integration
+    const subProjectItems = document.querySelectorAll(".sub-project-item");
+    subProjectItems.forEach(item => {
+        item.addEventListener("click", (e) => {
+            const projectId = item.getAttribute("data-id");
+            openModal(projectId);
+        });
+    });
+
+    // More Projects Toggle Controller
+    const toggleBtn = document.getElementById("toggle-projects-btn");
+    const subProjectsContainer = document.getElementById("sub-projects-container");
+
+    if (toggleBtn && subProjectsContainer) {
+        toggleBtn.addEventListener("click", () => {
+            const isCollapsed = subProjectsContainer.classList.contains("collapsed");
+            if (isCollapsed) {
+                subProjectsContainer.classList.remove("collapsed");
+                subProjectsContainer.classList.add("expanded");
+                toggleBtn.classList.add("active");
+                toggleBtn.querySelector("span").textContent = "더 보기 접기";
+            } else {
+                subProjectsContainer.classList.remove("expanded");
+                subProjectsContainer.classList.add("collapsed");
+                toggleBtn.classList.remove("active");
+                toggleBtn.querySelector("span").textContent = "View All Projects";
+            }
+        });
+    }
+
     modalCloseBtn.addEventListener("click", closeModal);
     modalOverlay.addEventListener("click", (e) => {
         if (e.target === modalOverlay) closeModal();

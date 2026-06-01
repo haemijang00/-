@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li><a href="#hero" class="active">Intro</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#projects">Featured Projects</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -197,6 +197,122 @@
                 </div>
             </div>
         </div>
+
+        <!-- More Projects Section (Toggled by button) -->
+        <div class="more-projects-wrapper reveal">
+            <button id="toggle-projects-btn" class="toggle-projects-btn">
+                <span>View All Projects</span>
+                <svg class="toggle-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 4L6 9L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+
+            <div id="sub-projects-container" class="sub-projects-container collapsed">
+                <div class="sub-projects-list">
+                    <!-- Sub Project 1 (Product) -->
+                    <div class="sub-project-item" data-id="product">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/product.png" alt="Form Wireless Speaker">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">Product Design</span>
+                            <h4 class="sub-proj-title">Form Wireless Speaker: Sound & Form</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Sub Project 2 (Chair) -->
+                    <div class="sub-project-item" data-id="chair">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/chair.png" alt="Sisu Lounge Chair">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">Furniture Design</span>
+                            <h4 class="sub-proj-title">Sisu Lounge Chair: Sculptural Comfort</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Sub Project 3 (Interior) -->
+                    <div class="sub-project-item" data-id="interior">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/interior.png" alt="Lumiere Atelier">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">Interior Environment</span>
+                            <h4 class="sub-proj-title">Lumiere Atelier: Creative Co-working Space</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Sub Project 4 (Branding) -->
+                    <div class="sub-project-item" data-id="branding">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/branding.png" alt="Monolith Specialty Coffee House">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">Branding Design</span>
+                            <h4 class="sub-proj-title">Monolith Specialty Coffee House Identity</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Sub Project 5 (Lighting) -->
+                    <div class="sub-project-item" data-id="lamp">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/lamp.png" alt="Aura Pendant Light">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">Lighting Design</span>
+                            <h4 class="sub-proj-title">Aura Pendant Light: Diffused Eclipse</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <!-- Sub Project 6 (UX/UI) -->
+                    <div class="sub-project-item" data-id="oasis">
+                        <div class="sub-proj-img-wrapper">
+                            <img src="images/oasis.png" alt="Oasis Botanical Garden">
+                        </div>
+                        <div class="sub-proj-info">
+                            <span class="sub-proj-cat">UX/UI Design</span>
+                            <h4 class="sub-proj-title">Oasis Botanical Garden Brand & UI</h4>
+                        </div>
+                        <span class="sub-proj-view-btn">
+                            View
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5H11M11 5L7 1M11 5L7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About & Skills Section -->
@@ -354,7 +470,7 @@
             </div>
 
             <div class="sns-links">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="sns-link">Instagram</a>
+                <a href="https://www.instagram.com/blue_rrose0.0?igsh=ZzhpZzJuZTdkZzZr" target="_blank" rel="noopener noreferrer" class="sns-link">Instagram</a>
             </div>
         </div>
     </section>
